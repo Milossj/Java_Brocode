@@ -1,9 +1,8 @@
+import java.io.*;
 import java.lang.module.FindException;
-import java.util.ArrayList;
-import java.util.Locale;
-import java.util.Scanner;
+import java.util.*;
 import javax.swing.JOptionPane;
-import java.util.Random;
+import java.io.FileReader;
 
 public class hgfd {
 //bro code java
@@ -645,11 +644,120 @@ public class hgfd {
           x.go();
 
       }*/
-    public static void main(String[] args){
+   /*    dynamic polymorphism (Animal.java Dog.java Cat.java)
+   public static void main(String[] args){
+        Animal animal;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What do you want");
+        System.out.println("1 cat 2 dog");
+        int choice = scanner.nextInt();
+        if (choice==1){
+            animal = new Cat();
+            animal.speak();
+        }
+        else if (choice==2) {
+            animal = new Dog();
+            animal.speak();
+        }
+        else {
+            System.out.println("invalid input");
+        }
+
+    }*/
+    /*exception handling
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        try {
+
+            System.out.println("Enter a whole number to divide");
+            int x = scanner.nextInt();
+
+            System.out.println("Enter a whole number to divide by");
+            int y = scanner.nextInt();
+
+            int z = x / y;
+
+            System.out.println("result " + z);
+        }
+        catch (ArithmeticException a){
+            System.out.println("cant divide by 0");
+        }
+        catch (InputMismatchException m) {
+            System.out.println("numberrrr");
+        }
+        catch (Exception e){
+            System.out.println("something wrong");           //to catch everything, considered lay,
+        }                                                    //should be added as a last resort to sort something we maybe forgot
+
+        finally {
+            scanner.close();
+            System.out.println("this will always print");
+        }*/
+
+  /*files and file class
+   public static void main(String[] args) {
+
+     File file = new File("s.txt");
+       // File file = new File("C:\\Users\\JA\\Desktop");
+
+        if (file.exists()){
+            System.out.println("exists");
+            System.out.println(file.getPath());
+            System.out.println(file.getAbsolutePath());
+            System.out.println(file.isFile());
+            file.delete();
+
+        }
+        else {
+            System.out.println("doesnt exist");
+        }*/
+ /*file writer
+  public static void main(String[] args) {
+
+      try {
+          FileWriter fileWriter = new FileWriter("poem.txt");
+          fileWriter.write("rdssddssaeally \n really miss u");
+          fileWriter.append("\n(a poem by my)");
+          fileWriter.close();
+      }
+      catch (IOException e){
+          e.printStackTrace();
+      }
+
+    }*/
+
+  /* reader
+  public static void main(String[] args) {
 
 
+        try {
+            FileReader reader = new FileReader("art.txt");
+            int data = reader.read();
 
-  }
+            while(data!=-1){
+                System.out.print((char)data);
+                data = reader.read();
+
+            }
+            reader.close();
+
+
+        }
+        catch (FileNotFoundException e){
+
+            e.printStackTrace();
+        }
+        catch (IOException e){
+
+            e.printStackTrace();
+        }
+    }*/
+
 
 
 }
+
+
+

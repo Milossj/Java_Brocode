@@ -1,8 +1,11 @@
+import java.awt.*;
 import java.io.*;
 import java.lang.module.FindException;
 import java.util.*;
-import javax.swing.JOptionPane;
+import javax.swing.*;
+import javax.swing.border.Border;
 import java.io.FileReader;
+import java.awt.Color;
 
 public class hgfd {
 //bro code java
@@ -754,10 +757,75 @@ public class hgfd {
             e.printStackTrace();
         }
     }*/
+    //48 ski[[ed, its audio
+
+
+  /*frame fuckaround
+    public static void main(String[] args) {
+   */
+       /* JFrame frame = new JFrame();
+
+        frame.setTitle("JFrame title"); //title
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //DO Nothing on close (hehe)
+        frame.setSize(420,420); //width and height
+        frame.setResizable(false); //resize ban
+        frame.setVisible(true); //make frame visible
+
+        ImageIcon image = new ImageIcon("download.png"); //changing logo
+        frame.setIconImage(image.getImage());
+        frame.getContentPane().setBackground(new Color(50,150,200)); //color
+*/
+     //   myframe myframe = new myframe();
+
+
+     /* frame, label, border methods
+     public static void main(String[] args){
+
+            JLabel label = new JLabel(); //make label
+            label.setText("BROOOOOO"); //set txt
+            ImageIcon icon = new ImageIcon("download.png");
+            Border border = BorderFactory.createLineBorder(Color.green,3); //border line
 
 
 
-}
+            JFrame frame = new JFrame(); //new fraem
+
+            frame.setTitle("JFrame title"); //title
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //DO Nothing on close (hehe)
+            frame.setSize(420,420); //width and height
+            frame.setResizable(true); //resize ban
+            frame.setVisible(true); //make frame visible
+            frame.setLayout(null);
+            frame.add(label);// adding label to frame
+            frame.pack();
+
+
+            label.setIcon(icon); //seting a icon next to label
+            label.setHorizontalTextPosition(JLabel.CENTER); //setting text position
+            label.setVerticalTextPosition(JLabel.BOTTOM);
+            label.setForeground(Color.BLUE); //color of text
+            label.setFont(new Font("MV Boli",Font.PLAIN,20)); //font setting
+            label.setBackground(new Color(50, 200, 230)); //background color
+            label.setOpaque(true); //seeing the change
+            label.setBorder(border); //border
+            label.setHorizontalAlignment(JLabel.CENTER); //set horizontal position of icon + text
+            label.setVerticalAlignment(JLabel.CENTER); //set vertical position of icon + text
+            label.setBounds(100, 100, 250, 250); //set x y position within frame as well as dimensions
+
+
+
+        }*/
+     public static void main(String[] args){
+
+
+
+     }
+
+
+
+    }
+
+
 
 
 

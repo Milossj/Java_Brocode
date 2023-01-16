@@ -1,21 +1,41 @@
 import javax.swing.*;
+import javax.swing.JFrame;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class myframe extends hgfd{
+public class MyFrame extends JFrame /*implements ActionListener*/{
+    JButton button = new JButton();
 
-    myframe(){
-        JFrame frame = new JFrame();
 
-        frame.setTitle("JFrame title"); //title
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //DO Nothing on close (hehe)
-        frame.setSize(420,420); //width and height
-        frame.setResizable(false); //resize ban
-        frame.setVisible(true); //make frame visible
+    JLabel label = new JLabel();
+    MyFrame(){
 
-        ImageIcon image = new ImageIcon("download.png"); //changing logo
-        frame.setIconImage(image.getImage());
-        frame.getContentPane().setBackground(new Color(50,150,200)); //color
+        ImageIcon icon = new ImageIcon("download.png");
+        JButton button = new JButton();
+        button.setBounds(200,100,250,150);
+        //button.addActionListener(this);
+        button.addActionListener(e -> System.out.println("poo")); //lambda expression
+        button.setText("Button");
+        button.setFocusable(false);
+        button.setForeground(Color.cyan);
+        button.setBackground(Color.black);
+        button.setHorizontalTextPosition(JButton.CENTER);
+        button.setVerticalTextPosition(JButton.CENTER);
+
+
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setLayout(null);
+        this.setSize(500,500);
+        this.setVisible(true);
+        this.add(button);
+        this.add(label);
+    }
+  /*  @Override
+    public void actionPerformed(ActionEvent e){
+        if (e.getSource()==button){
+            System.out.print("finally");
+        }*/
 
 
     }
-}

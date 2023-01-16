@@ -2,7 +2,7 @@ import javax.swing.*;
 
 
 
-    public class HelloWorld {
+  /*  public class HelloWorld {
 
 
         public static void main(String[] args) {
@@ -18,5 +18,5 @@ import javax.swing.*;
             // Show the frame
             frame.setVisible(true);
         }
-    }
+    }*/
 

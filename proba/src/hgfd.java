@@ -1,11 +1,4 @@
-import java.awt.*;
-import java.io.*;
-import java.lang.module.FindException;
-import java.util.*;
 import javax.swing.*;
-import javax.swing.border.Border;
-import java.io.FileReader;
-import java.awt.Color;
 
 public class hgfd {
 //bro code java
@@ -762,8 +755,8 @@ public class hgfd {
 
   /*frame fuckaround
     public static void main(String[] args) {
-   */
-       /* JFrame frame = new JFrame();
+
+        JFrame frame = new JFrame();
 
         frame.setTitle("JFrame title"); //title
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //DO Nothing on close (hehe)
@@ -815,15 +808,69 @@ public class hgfd {
 
 
         }*/
-     public static void main(String[] args){
+   /* panels
+   public static void main(String[] args){
+
+         JFrame frame = new JFrame(); //new frame
+         JLabel label = new JLabel();
+         label.setText("COOOOL");
+
+         JPanel redPanel = new JPanel();
+         redPanel.setBackground(Color.red);
+         redPanel.setBounds(0, 0, 250, 250);
+
+         JPanel bluePanel = new JPanel();
+         bluePanel.setBackground(Color.blue);
+         bluePanel.setBounds(250, 0, 250, 250);
+
+         JPanel greenPanel = new JPanel();
+         greenPanel.setBackground(Color.blue);
+         greenPanel.setBounds(0, 250, 500, 250);
 
 
+         frame.setTitle("JFrame title"); //title
+         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //DO Nothing on close (hehe)
+         frame.setSize(750,750); //width and height
+         frame.setResizable(true); //resize ban
+         frame.setVisible(true); //make frame visible
 
-     }
+         redPanel.add(label);
+         frame.add(redPanel);
+         frame.add(bluePanel);
+         frame.add(greenPanel);
+     }*/
 
+   /* idk sta je ovo
+   public static void main(String[] args){
 
+        JFrame frame = new JFrame("My Frame");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(null);
+        frame.setSize(500, 500);
+        frame.setVisible(true);
 
+        JButton button = createButton("Click Me!");
+        button.setBounds(200,200,100,50);  // set the position and size of the button
+        frame.add(button); // add the button to the frame
     }
+    public static JButton createButton(String buttonText) {
+        JButton button = new JButton(buttonText);
+        return button;
+    }*/
+
+/* JButtons (MyFrame.java)
+public static void main(String[] args){
+
+    new MyFrame();
+
+
+    }*/
+
+}
+
+
+
+
 
 
 

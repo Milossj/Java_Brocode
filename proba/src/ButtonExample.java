@@ -4,7 +4,7 @@ import java.awt.event.*;
 
 
 
-public class ButtonExample {
+/*public class ButtonExample {
 
         private static int count = 0;
         private static JLabel label;
@@ -25,4 +25,4 @@ public class ButtonExample {
             frame.setSize(200,200);
             frame.setVisible(true);
         }
-    }
+    }*/
